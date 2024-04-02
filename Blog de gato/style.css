@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-size: 1.6rem;
+}
+.texto{
+  margin-left: .8rem;
+  margin-right: .8rem;
+}
+main, section, img, header, footer{
+  max-width: 33.0rem;
+  margin:0 auto;
+  align-items: center;
+}
+:root{
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+
+#app{
+  display: grid;
+  grid-template-rows: max-content 1fr max-content; /* maximo content no header, 1 fr no main e max.. no footer*/
+  height: 100vh;
+  max-width: 33.0rem;
+  margin: 0 auto;
+}
+.container h1 {
+  font-size: 2.4rem;
+}
+header{
+ display: flex;
+ align-items: center;
+ background-color: #065E7C;
+ gap: 2.5rem;
+ text-align: center;
+ width: 100%;
+ min-width: 33.0rem;
+ box-sizing: max-content;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  margin-bottom: 1.5rem;
+  margin-left: .8rem;
+  margin-right: .8rem;
+}
+.details h2{
+font-weight: 40.0rem;
+font-size: 1.8rem;
+align-items: center;
+}
+.details p{
+  font-size: 1.4rem;
+}
+footer{
+  padding: 1.6rem;
+  font-weight: 600;
+  background-color: #065E7C;
+  margin-top:2.0rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+section h1{
+  margin-bottom: 1.0rem;
+  margin-top: 6.0rem;
+  margin-left:.8rem ;
+}
+/*media queries*/
+@media (min-width:700px){
+  #app{
+    max-width: 1020px;
+    display:flex;
+    gap:10rem;
+    height: 100vh;
+    margin-top: 5.0rem;
+   
+  }
+  section{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3.0rem;
+  }
+  header{
+    max-width: 100%;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer{
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    max-width: 1020%;
+    justify-content: center;
+  }
+}
+  
